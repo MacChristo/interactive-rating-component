@@ -1,0 +1,115 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White--: hsl(0, 0%, 100%);
+    --Light-Grey--: hsl(217, 12%, 63%);
+    --Medium-Grey--: hsl(216, 12%, 54%);
+    --Dark-Blue--: hsl(213, 19%, 18%);
+    --Very-Dark-Blue--: hsl(216, 12%, 8%);
+    --Font-Size--: .9375rem;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue--);
+    color: var(--Medium-Grey--);
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.start-rating, .thank-you {
+    background-color: var(--Dark-Blue--);
+    padding: 1.5em;
+    max-width: 300px;
+    max-height: 330px;
+    border-radius: 1em;
+    margin-top: 8.5em;
+}
+
+.thank-you {
+    background-color: var(--Dark-Blue--);
+    padding: 1.5em;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 1em;
+    margin-top: 8.5em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round-space {
+    padding: 0.675em;
+    border-radius: 100px;
+    background-color: hsla(216, 12%, 54%, 0.2);
+}
+
+.h2 {
+    color: var(--White--);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-div {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5em 0;
+}
+
+.btn {
+    justify-content: center;
+    background-color: var(--Orange);
+    border: none;
+    padding: 0.65em 7.5em;
+    border-radius: 100px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* ACTIVE STATES */
+
+.rate-numbers:hover {
+    background-color: var(--Orange);
+    color: var(--White--);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--White--);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: var(--Medium-Grey--);
+    color: var(--White--);
+}
+
+.btn:disabled:hover {
+    color: var(--White--);
+}
+
+#your-rate {
+    color: var(--Orange);
+    background-color: hsla(216, 12%, 54%, 0.2);
+    border-radius: 100px;
+    display: none;
+    width: 90%;
+}
+
+.attribution {
+    font-size: 0.625em;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
