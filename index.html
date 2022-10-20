@@ -45,15 +45,22 @@
             </p>
           </div>
 
-          <div id="my-ratings" class="rating-div flex">
-            <div class="rate-numbers round-space">1</div>
-            <div class="rate-numbers round-space">2</div>
-            <div class="rate-numbers round-space">3</div>
-            <div class="rate-numbers round-space">4</div>
-            <div class="rate-numbers round-space">5</div>
-          </div>
+          <form id="RatingForm">
+            <div class="rating-inputs">
+              <input type="radio" name="rating" id="btn-1" class="radio" value="1">
+              <label for="btn-1">1</label>
+              <input type="radio" name="rating" id="btn-2" class="radio" value="2">
+              <label for="btn-2">2</label>
+              <input type="radio" name="rating" id="btn-3" class="radio" value="3">
+              <label for="btn-3">3</label>
+              <input type="radio" name="rating" id="btn-4" class="radio" value="4">
+              <label for="btn-4">4</label>
+              <input type="radio" name="rating" id="btn-5" class="radio" value="5">
+              <label for="btn-5">5</label>
+            </div>
+            <input type="submit" value="submit" id="submit-btn" class="btn">
+          </form>
 
-          <button type="submit" id="submit-btn" class="btn">Submit</button>
         </div>
       </section>
     </main>
